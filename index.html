@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <!-- font awesome kit  -->
+    <script src="https://kit.fontawesome.com/e0c7ddfe85.js" crossorigin="anonymous"></script>
+
+    <!-- tailwind css link  -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @keyframes aspin-chakma {
+            0% {
+                top: 100px;
+            }
+
+            50% {
+                top: 500px;
+            }
+
+            100% {
+                top: 100px;
+            }
+        }
+
+        ;
+
+        .animation-bro {
+            animation-name: aspin-chakma;
+            animation-duration: 5s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            background-color: red;
+
+        }
+
+        .hire-me,
+        #download-cv {
+            background-color: #DC143C;
+            border: 2px solid #DC143C;
+        }
+
+        .hire-me:hover {
+            background-color: transparent;
+            transition: all 0.3s ease-in-out;
+        }
+
+        #download-cv {
+            background-color: #DC143C;
+            border-radius: 5px
+        }
+
+        #download-cv:hover {
+            background-color: transparent;
+            color: #DC143C;
+            ;
+            transition: all 0.3s ease-in-out;
+
+        }
+
+
+
+        #time-show {
+            background-image: url(images/Frame\ 59.jpg);
+            padding: 5rem;
+            background-size: cover;
+            background-attachment: fixed;
+            padding: 13rem;
+
+        }
+
+        #myservice {
+            background-color: #111111;
+        }
+
+        .card {
+            background-color: #222;
+            border-radius: 5px;
+            cursor: pointer;
+            overflow: hidden;
+        }
+
+        .card i {
+            color: #DC143C;
+        }
+
+        #card-1:hover {
+            background-color: blue;
+            transform: translateX(77);
+        }
+
+        .mini-container {
+            overflow: hidden;
+        }
+
+        .mini-container:hover .card i {
+            color: white;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .card:hover {
+            background-color: #DC143C;
+            color: white;
+            border-radius: 25px;
+            transform: scale(1.04);
+            transition: all 0.3s ease-in-out;
+        }
+
+        ;
+
+        #read-more-button {
+            background-color: #DC143C;
+            border: 2px solid #DC143C;
+        }
+
+        #read-more-button:hover {
+            background-color: transparent;
+            color: #DC143C;
+        }
+
+        ;
+
+        #progrees-bro {
+            background-color: blue;
+            width: 50px;
+            height: 30px;
+        }
+
+        ;
+
+        .send-message {
+            background-color: red;
+        }
+
+        ;
+
+        .customer-card {
+            color: blue;
+            padding: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <!-- home section  -->
+        <section
+            style="background-image: url(images/kevin-ku-w7ZyuGYNpRQ-unsplash.jpg);background-size: cover;background-attachment: fixed; "
+            class="py-8">
+            <div class="w-10/12 mx-auto flex">
+                <div class="w-3/4">
+                    <div class="text-3xl text-white mb-3 mt-48">Hello, my name is</div>
+                    <div class="text-7xl font-bold text-white mb-3">Aspin Chakma</div>
+                    <div class="text-5xl text-white">And I'm a <span class="font-semibold text-red-600 mb-3"
+                            id="junior-developer"></span></div>
+                    <button
+                        class="bg-red-600 border-red-700 rounded text-2xl px-8 py-3 text-white mt-4  mb-60 font-medium hire-me"
+                        id="hire-me">Hire
+                        Me</button>
+                </div>
+                <div class="pt-30">
+                    <img class="mt-44 animate-bounce " style="height: 300px;" src="images/download (1).png" alt="">
+                </div>
+            </div>
+
+        </section>
+
+    </header>
+    <main class="mt-32">
+
+
+
+        <section class="w-10/12 mx-auto">
+            <div class="text-center">
+                <h3 class="text-5xl font-medium mb-2" style="font-family: 'Ubuntu Condensed', sans-serif;">About Me</h3>
+                <p style="font-family: 'Ubuntu Condensed', sans-serif;" class="font-bold text-red-600 text-2xl">Who I Am
+                </p>
+            </div>
+            <div class="grid grid-cols-2 mt-8 ">
+                <div style="width: 400px;">
+                    <img class="rounded" src="images/aspin.png.jpg" alt="">
+                </div>
+                <div class="my-14">
+                    <h3 class="text-2xl font-bold mb-5">I'm Aspin Chakma and I'm a <span class="text-red-600"
+                            id="about-me"></span></h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, nobis? Quidem explicabo molestiae
+                        quae quisquam adipisci nemo impedit laborum aut, repellendus deserunt vel tempora excepturi
+                        pariatur tenetur doloribus praesentium sunt optio amet? Excepturi ipsam, perferendis,
+                        reprehenderit rerum quae repellendus quisquam laudantium quia totam voluptates voluptatibus iure
+                        tenetur sit, amet consequatur.</p>
+
+                    <button
+                        class="bg-red-600 border-red-700 rounded text-xl px-4 py-2 text-white mt-4  mb-40 font-medium hire-me hover:text-red-600"
+                        id="read-more-button">Download CV</button>
+                </div>
+            </div>
+        </section>
+        <!-- my service sectio  -->
+        <section id="myservice" class="py-36">
+            <div class="w-11/12 mx-auto text-center mb-8">
+                <h2 class="text-5xl font-bold text-white mb-2" style="font-family: 'Ubuntu Condensed', sans-serif;">My
+                    Service</h2>
+                <h3 class="text-2xl font-bold text-white" style="font-family: 'Ubuntu Condensed', sans-serif;">- <span
+                        style="color:#DC143C">What i Provide</span> -</h3>
+            </div>
+            <div class="grid grid-cols-3 w-10/12 mx-auto gap-8">
+
+                <div class="mini-container">
+                    <div class=" text-white text-center gap-4 card px-4 py-10">
+                        <i class="text-white text-6xl fas fa-paint-brush mb-4 icon-color"></i>
+                        <h3 class="text-3xl font-bold mb-4">Web Design</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita aspernatur molestias
+                            blanditiis
+                            quasi tempora, quod sed.</p>
+                    </div>
+                </div>
+                <div class="mini-container">
+                    <div class=" text-white text-center gap-4 card px-4 py-10">
+                        <i class="text-white text-6xl mb-4 fas fa-chart-line"></i>
+                        <h3 class="text-3xl font-bold mb-4">Advertising</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita aspernatur molestias
+                            blanditiis
+                            quasi tempora, quod sed.</p>
+                    </div>
+                </div>
+                <div class="mini-container">
+                    <div class="text-white text-center gap-4 card px-4 py-10">
+                        <i class="text-white text-6xl mb-4  fas fa-code"></i>
+                        <h3 class="text-3xl font-bold mb-4">Web Develpment</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita aspernatur molestias
+                            blanditiis
+                            quasi tempora, quod sed.</p>
+                    </div>
+                </div>
+
+
+            </div>
+            </div>
+        </section>
+
+        <!-- my skill section  -->
+        <section class="mt-32">
+            <div class="w-10/12 mx-auto">
+                <div class="mb-8">
+                    <h1 class="text-center text-5xl font-semibold mb-1"
+                        style="font-family: 'Ubuntu Condensed', sans-serif;">My Skills</h1>
+                    <h3 class="text-center text-3xl font-medium " style="font-family: 'Ubuntu Condensed', sans-serif;">-
+                        <span class="text-red-600">what i konw</span> -
+                    </h3>
+                </div>
+                <div class="grid grid-cols-2 gap-10">
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4">My creative skills & experiences.</h3>
+                        <p>My creative skills & experiences.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, ratione error est
+                            recusandae consequatur, iusto illum deleniti quidem impedit, quos quaerat quis minima sequi.
+                            Cupiditate recusandae laudantium esse, harum animi aspernatur quisquam et delectus ipsum
+                            quam
+                            alias quaerat? Quasi hic quidem illum. Ad delectus natus aut hic explicabo minus quod.
+
+                        </p>
+
+                        <button
+                            class="bg-red-600 border-red-700 rounded text-xl px-4 py-2 text-white mt-4  mb-36 font-medium hire-me hover:text-red-600"
+                            id="read-more-button">Read More</button>
+
+
+                    </div>
+                    <div>
+                        <div>
+
+                            <div class=" grid grid-cols-2 font-medium mb-1 text-lg">
+                                <h1>HTML</h1>
+                                <h2 class="text-right">90%</h2>
+                            </div>
+                            <div class="mb-4 mb-1" style="width:100%;height: 5px; background-color: #D3D3D3">
+                                <div style="width: 90%; background-color:#DC143C; height:5px;"></div>
+                            </div>
+
+                        </div>
+                        <div>
+                            <div class=" grid grid-cols-2 font-medium mb-1 text-lg">
+                                <h1>CSS</h1>
+                                <h2 class="text-right">80%</h2>
+                            </div>
+                            <div class="mb-4" style="width:100%;height: 5px; background-color:#D3D3D3;">
+                                <div style="width: 80%; background-color:#DC143C; height:5px;"></div>
+                            </div>
+
+                        </div>
+                        <div>
+                            <div class=" grid grid-cols-2 font-medium mb-1 text-lg">
+                                <h1>Bootstrap</h1>
+                                <h2 class="text-right">60%</h2>
+                            </div>
+                            <div class="mb-4" style="width:100%;height: 5px; background-color: #D3D3D3;">
+                                <div style="width: 60%; background-color:#DC143C; height:5px;"></div>
+                            </div>
+
+                        </div>
+                        <div>
+                            <div class=" grid grid-cols-2 font-medium mb-1 text-lg">
+                                <h1>TailWind</h1>
+                                <h2 class="text-right">85%</h2>
+                            </div>
+                            <div class="mb-4" style="width:100%;height: 5px; background-color: #D3D3D3;">
+                                <div style="width: 85%; background-color:#DC143C; height:5px;"></div>
+                            </div>
+
+                        </div>
+                        <div>
+                            <div class=" grid grid-cols-2 font-medium mb-1 text-lg">
+                                <h1>JavaScript</h1>
+                                <h2 class="text-right">93%</h2>
+                            </div>
+                            <div style="width:100%;height: 5px; background-color: #D3D3D3;">
+                                <div style="width: 93%; background-color:#DC143C; height:5px;"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- time section -->
+        <section id="time-show" class="mb-10">
+            <div class="w-10/12 mx-auto">
+                <div class="p-10 text-center">
+                    <h1 style="font-family: 'Ubuntu Condensed', sans-serif; color: #be1558;"
+                        class="text-6xl font-semibold text-red-500 mb-8">Time Zone</h1>
+                    <h1 class="text-3xl font-bold text-red-600 mb-4" id="day" style="color:#322514"></h1>
+                    <h1 class="text-6xl font-bold text-blue-600" id="time-format"></h1>
+                </div>
+            </div>
+        </section>
+
+        <!-- customer review section  -->
+
+        <section id="myservice" class="py-36">
+            <div class="w-11/12 mx-auto text-center mb-8">
+                <h2 class="text-5xl font-bold text-white mb-2" style="font-family: 'Ubuntu Condensed', sans-serif;">My
+                    teams</h2>
+                <h3 class="text-2xl font-bold text-white" style="font-family: 'Ubuntu Condensed', sans-serif;">- <span
+                        style="color:#DC143C">who with me</span> -</h3>
+            </div>
+            <div class="grid grid-cols-3 w-10/12 mx-auto gap-8">
+
+                <div class="mini-container">
+                    <div class=" text-white text-center gap-4 card px-4 py-10">
+                        <img src="images/images (1).png" class="mx-auto" alt="">
+                        <h3 class="text-3xl font-bold mb-4">Kolpa Chakma</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita aspernatur molestias
+                            blanditiis
+                            quasi tempora, quod sed.</p>
+                    </div>
+                </div>
+                <div class="mini-container">
+                    <div class=" text-white text-center gap-4 card px-4 py-10 card-1">
+                        <img class="mx-auto mb-4" src="images/download (3) (1).png" alt="">
+                        <h3 class="text-3xl font-bold mb-4">DipongKar Chakma</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita aspernatur molestias
+                            blanditiis
+                            quasi tempora, quod sed.</p>
+                    </div>
+                </div>
+                <div class="mini-container">
+                    <div class="text-white text-center gap-4 card px-4 py-10">
+                        <img src="images/download (2) (2) (1).png" class="mx-auto" alt="">
+                        <h3 class="text-3xl font-bold mb-4">A Shanti Chakma</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita aspernatur molestias
+                            blanditiis
+                            quasi tempora, quod sed.</p>
+                    </div>
+                </div>
+
+
+            </div>
+            </div>
+        </section>
+
+        <!-- total visitor section -->
+        <section class=" py-20 my-36" style="background-color: #f5f0e1">
+            <div class="grid grid-cols-3 w-10/12 mx-auto">
+                <div>
+                    <h2 style="font-family: 'Ubuntu Condensed', sans-serif; color:#408ec6"
+                        class="text-4xl font-semibold text-center">
+                        Total Vistor</h2>
+                    <p id="total-visitor" class="text-6xl font-bold text-center"
+                        style="font-family: 'Graduate', cursive; color: #3b4d61;"></p>
+                </div>
+                <div>
+                    <h2 style="font-family: 'Ubuntu Condensed', sans-serif; color:  #ff6e40;"
+                        class="text-4xl font-semibold text-center">
+                        Total Subscribers</h2>
+                    <p class="text-6xl font-bold text-center" style="font-family: 'Graduate', cursive; color: #3b4d61;"
+                        id="total-subscriber"></p>
+                </div>
+                <div>
+                    <h2 style="font-family: 'Ubuntu Condensed', sans-serif; color: #be1558;"
+                        class=" text-center text-4xl font-semibold">Total
+                        Projects</h2>
+                    <p class="text-6xl font-bold text-center" style="font-family: 'Graduate', cursive; color: #3b4d61;"
+                        id="total-project"></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- contact section  -->
+        <section>
+            <div class="w-10/12 mx-auto">
+                <div class="mb-8">
+                    <h1 class="text-center text-5xl font-semibold mb-1"
+                        style="font-family: 'Ubuntu Condensed', sans-serif;">
+                        Contact me</h1>
+                    <h3 class="text-center text-3xl font-medium " style="font-family: 'Ubuntu Condensed', sans-serif;">-
+                        <span class="text-red-600">get in touch</span> -
+                    </h3>
+                </div>
+                <div class="grid grid-cols-2 gap-10">
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4">Get in Touch</h3>
+                        <p class="mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos harum
+                            corporis fuga
+                            corrupti.
+                            Doloribus quis soluta nesciunt veritatis vitae nobis?</p>
+                        <div class=" grid grid-cols-1">
+                            <div class="flex items-center mb-4">
+                                <i style="color:#DC143C" class="fas fa-user text-2xl mr-4"></i>
+                                <div>
+                                    <h1 class="font-bold">Name</h1>
+                                    <h3>Aspin Chakma</h3>
+                                </div>
+                            </div>
+                            <div class=" flex items-center mb-4">
+                                <i style="color:#DC143C" class="fas fa-map-marker-alt text-2xl mr-4"></i>
+                                <div>
+                                    <h1 class="font-bold">Address</h1>
+                                    <h3>Rangamati, Chittagong, Bangladesh</h3>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <i style="color:#DC143C" class="fas fa-envelope text-2xl mr-4"></i>
+                                <div>
+                                    <h1 class="font-bold">Email</h1>
+                                    <h3>aspinchakma2019@gmail.com</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4">Message me</h3>
+                        <div class="grid grid-cols-1">
+                            <div class="grid grid-cols-2 gap-2 mb-4">
+                                <input placeholder="Name" class="p-2 text rounded border border-gray-400 outline-none"
+                                    type="text">
+                                <input placeholder="Email" class="p-2 text rounded border border-gray-400 outline-none"
+                                    type="text">
+
+                            </div>
+                            <input placeholder="Subjcet"
+                                class="mb-4 p-2 text rounded border border-gray-400 outline-none" type="text">
+                            <input placeholder="Message.."
+                                class="pt-2 mb-4 pb-14 pl-2 text rounded border border-gray-400 outline-none"
+                                type="text">
+                        </div>
+                        <button
+                            class="bg-red-600 border-red-700 rounded text-xl px-4 py-2 text-white mt-4  mb-60 font-medium hire-me hover:text-red-600"
+                            id="read-more-button">Send Messsage</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+    </main>
+    <footer class="text-center bg-black py-4">
+        <h3 class="text-white text-xl">Created By <a style="color:#DC143C" href="#">Aspin Chakma</a> | &copy 2020 All
+            rights
+            reserved.</h3>
+    </footer>
+
+
+    <!-- custom JavaScript link  -->
+    <script src="js/app.js"></script>
+</body>
+
+</html>
